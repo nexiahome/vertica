@@ -104,6 +104,7 @@ class Vertica::Query
   end
 
   def buffer_row(row)
+    @buffer ||= []
     @buffer << row
   end
 
